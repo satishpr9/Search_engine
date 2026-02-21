@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Search</title>
+    <!-- Modern Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons (Lighter and more modern than FA) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Ambient Background -->
+    <div class="ambient-bg">
+        <div class="glow-blob tr"></div>
+        <div class="glow-blob bl"></div>
+    </div>
+
+    <!-- Layout Container -->
+    <div class="app-layout" id="app">
+
+        <!-- Header: Centered on load, moves up on search -->
+        <header class="masthead">
+            <div class="logo" id="home-btn">
+                <i class="ph ph-planet logo-icon"></i>
+                <span class="logo-text">Nexus</span>
+            </div>
+
+            <div class="search-wrapper">
+                <form id="search-form" class="search-form">
+                    <i class="ph ph-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search the web, beautifully..." autocomplete="off"
+                        spellcheck="false" autofocus>
+
+                    <button type="button" id="clear-btn" class="icon-btn" style="display:none;"
+                        aria-label="Clear Search">
+                        <i class="ph ph-x"></i>
+                    </button>
+                    <!-- Small divider line -->
+                    <div class="divider"></div>
+                    <button type="submit" class="icon-btn submit-btn" aria-label="Search">
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </form>
+
+                <!-- Autocomplete Dropdown -->
+                <div id="autocomplete-box" class="autocomplete-box"></div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+
+            <div id="results-meta" class="results-meta"></div>
+
+            <!-- Did You Mean? -->
+            <div id="spell-correction" class="spell-correction">
+                <i class="ph ph-magic-wand"></i> Did you mean: <a href="#" id="correction-link"></a>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="loader-wrap">
+                <div class="nexus-spinner"></div>
+            </div>
+
+            <div id="zero-state" class="zero-state">
+                <div class="stats-badge" id="stats-badge">
+                    <i class="ph ph-database"></i> <span id="stats-text">Warming up index...</span>
+                </div>
+                <div class="illustration">
+                    <i class="ph-duotone ph-globe-hemisphere-west"></i>
+                </div>
+            </div>
+
+            <!-- Results List -->
+            <div id="results-list" class="results-layout"></div>
+
+            <!-- Pagination Controls -->
+            <div id="pagination" class="pagination-controls">
+                <button id="prev-btn" class="page-btn"><i class="ph ph-caret-left"></i> Previous</button>
+                <div class="page-numbers" id="page-numbers">
+                    <!-- Page numbers injected here -->
+                </div>
+                <button id="next-btn" class="page-btn">Next <i class="ph ph-caret-right"></i></button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Floating Action Button for Crawling -->
+    <button id="fab-crawl" class="fab-btn" aria-label="Add URL to Crawl">
+        <i class="ph ph-plus"></i>
+    </button>
+
+    <!-- Crawl Modal -->
+    <div id="crawl-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal"><i class="ph ph-x"></i></button>
+            <div class="modal-header">
+                <i class="ph-duotone ph-spider-web" style="font-size: 2rem; color: var(--accent-brand);"></i>
+                <h2>Index a New Page</h2>
+                <p>Submit a URL to instantly crawl and add it to the search index.</p>
+            </div>
+            <form id="crawl-form" class="crawl-form">
+                <input type="url" id="crawl-input" placeholder="https://example.com" required>
+                <button type="submit" class="crawl-submit-btn">
+                    <span>Crawl</span> <i class="ph ph-arrow-right"></i>
+                </button>
+            </form>
+            <div id="crawl-status" class="crawl-status"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
