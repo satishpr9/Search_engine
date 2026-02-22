@@ -95,7 +95,7 @@ class CrawlerManager:
                 
                 if html and status == 200:
                     # 3. Parse & Extract
-                    title, text, canonical_url, links = parse_html(html, url)
+                    title, text, canonical_url, links, thumbnail_url, page_type = parse_html(html, url)
                     content_hash = simhash(text)
                     
                     # 4. Content Deduplication Detection
@@ -116,7 +116,7 @@ class CrawlerManager:
                         
                         if success:
                             # 6. Index Full Text for Search
-                            await self.storage.index_document(url_hash, url, title, text)
+                            await self.storage.index_document(url_hash, url, title, text, thumbnail_url, page_type)
                             print(f"  -> Indexed: {title}")
                             
                             # 7. Add discovered links to frontier 

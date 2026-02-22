@@ -4,7 +4,7 @@ import urllib.robotparser
 from urllib.parse import urlparse
 import time
 
-USER_AGENT = "LocalCrawlerBot/1.0 (+http://localhost/bot.html)"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 
 class Fetcher:
     def __init__(self, session_timeout=15, max_redirects=5):
@@ -20,7 +20,20 @@ class Fetcher:
         self.session = aiohttp.ClientSession(
             connector=connector,
             timeout=self.timeout,
-            headers={"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate, br"}
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept-Encoding": "gzip, deflate, br",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Sec-Ch-Ua": '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"Windows"',
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1"
+            }
         )
 
     async def close(self):
@@ -40,18 +53,23 @@ class Fetcher:
                         content = await resp.text()
                         rp.parse(content.splitlines())
                     else:
+                        print(f"[Robots] {domain} returned {resp.status} for robots.txt")
                         rp.allow_all = True
-            except Exception:
+            except Exception as e:
+                print(f"[Robots] Exception fetching {robots_url}: {e}")
                 rp.allow_all = True # Default to allow all if robots.txt is unreachable
             self.robot_parsers[domain] = rp
         return self.robot_parsers[domain]
 
     async def enforce_politeness(self, url):
         """Check robots.txt and delay if necessary to respect crawl-delay."""
-        domain = urlparse(url).netloc
+        if url.endswith("/robots.txt"):
+            return True
+
         rp = await self.get_robot_parser(url)
         
         if not rp.can_fetch(USER_AGENT, url):
+            print(f"[Politeness] robots.txt explicitly blocked {USER_AGENT} from {url}")
             return False
 
         # Use robots.txt crawl-delay if present, otherwise default to a polite 0.5s local delay
@@ -81,7 +99,8 @@ class Fetcher:
                 
                 # We only want to process HTML pages
                 content_type = headers.get("Content-Type", "").lower()
-                if "text/html" not in content_type:
+                if "text/html" not in content_type and "text/plain" not in content_type:
+                    print(f"[{url}] Skipping non-html/plain content type: {content_type}")
                     return None, status, headers, fetch_time_ms
                     
                 # Read content with a size limit (e.g., 5MB) to prevent OOM on huge pages
@@ -89,8 +108,11 @@ class Fetcher:
                 return html, status, headers, fetch_time_ms
                 
         except asyncio.TimeoutError:
+            print(f"[Fetcher] Timeout fetching {url}")
             return None, 408, None, int((time.perf_counter() - start_time) * 1000)
-        except aiohttp.ClientError:
+        except aiohttp.ClientError as e:
+            print(f"[Fetcher] ClientError fetching {url}: {e}")
             return None, 500, None, int((time.perf_counter() - start_time) * 1000)
-        except Exception:
+        except Exception as e:
+            print(f"[Fetcher] Exception fetching {url}: {e}")
             return None, 500, None, int((time.perf_counter() - start_time) * 1000)

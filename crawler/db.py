@@ -5,8 +5,11 @@ from whoosh.index import create_in, exists_in, open_dir
 from whoosh.fields import Schema, TEXT, ID, DATETIME
 from whoosh.analysis import StemmingAnalyzer
 
-DB_PATH = "crawler_data.db"
-INDEX_DIR = "whoosh_index"
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "crawler_data.db")
+INDEX_DIR = os.path.join(BASE_DIR, "whoosh_index")
 
 # SQLite Table Schemas
 CREATE_PAGES_TABLE = """
@@ -87,6 +90,8 @@ def init_whoosh_index():
         url=ID(stored=True),
         title=TEXT(stored=True, analyzer=StemmingAnalyzer()),
         content=TEXT(stored=True, analyzer=StemmingAnalyzer()), # Store content for snippets
+        thumbnail_url=ID(stored=True),
+        page_type=ID(stored=True),
         crawled_at=DATETIME(stored=True)
     )
     

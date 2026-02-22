@@ -3,8 +3,10 @@ import asyncio
 from datetime import datetime
 from whoosh.index import open_dir
 
-DB_PATH = "crawler_data.db"
-INDEX_DIR = "whoosh_index"
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "crawler_data.db")
+INDEX_DIR = os.path.join(BASE_DIR, "whoosh_index")
 
 class StorageHelper:
     def __init__(self, db_path=DB_PATH):
@@ -76,7 +78,7 @@ class StorageHelper:
         except Exception as e:
             print(f"Error saving links for {source_url_hash}: {e}", flush=True)
 
-    def _index_document_sync(self, url_hash, url, title, text):
+    def _index_document_sync(self, url_hash, url, title, text, thumbnail_url="", page_type="website"):
         """Synchronous whoosh update."""
         try:
             ix = open_dir(INDEX_DIR)
@@ -86,12 +88,14 @@ class StorageHelper:
                 url=url,
                 title=title,
                 content=text,
+                thumbnail_url=thumbnail_url,
+                page_type=page_type,
                 crawled_at=datetime.utcnow()
             )
             writer.commit()
         except Exception as e:
             print(f"Index error for {url}: {e}")
 
-    async def index_document(self, url_hash, url, title, text):
+    async def index_document(self, url_hash, url, title, text, thumbnail_url="", page_type="website"):
         """Add a document to Whoosh without blocking the asyncio event loop."""
-        await asyncio.to_thread(self._index_document_sync, url_hash, url, title, text)
+        await asyncio.to_thread(self._index_document_sync, url_hash, url, title, text, thumbnail_url, page_type)

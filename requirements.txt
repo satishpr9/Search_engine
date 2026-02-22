@@ -3,3 +3,6 @@ beautifulsoup4==4.12.3
 lxml==5.1.0
 Whoosh==2.7.4
 aiosqlite==0.20.0
+groq
+python-dotenv
+cloudscraper

@@ -4,7 +4,8 @@ from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
 import os
 
-INDEX_DIR = "whoosh_index"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+INDEX_DIR = os.path.join(BASE_DIR, "whoosh_index")
 
 def search(query_str):
     if not os.path.exists(INDEX_DIR):

@@ -1,0 +1,69 @@
+2026-02-21 20:49:21,695 [CrawlAgent] INFO: Started and listening to topic: crawl_targets
+2026-02-21 20:49:21,696 [CleanAgent] INFO: Started and listening to topic: raw_html_queue
+2026-02-21 20:49:21,696 [ChunkAgent] INFO: Started and listening to topic: clean_queue
+2026-02-21 20:49:21,697 [IndexAgent] INFO: Started and listening to topic: chunk_queue
+2026-02-21 20:49:21,697 [RetrievalAgent] INFO: Started (no active queue subscription)
+2026-02-21 20:49:21,698 [AnswerAgent] INFO: Started (no active queue subscription)
+=== Starting AI Search Engine Pipeline ===
+Initialized ChromaDB collection: test_search
+Subscribed to topic: raw_html_queue
+Subscribed to topic: clean_queue
+Subscribed to topic: chunk_queue
+Subscribed to topic: crawl_targets
+Subscribed to topic: raw_html_queue
+Subscribed to topic: clean_queue
+Subscribed to topic: chunk_queue
+
+=== All agents started. Running end-to-end test ===
+
+Triggering crawl for: https://example.com
+Waiting 5 seconds for ingestion pipeline to finish (Crawl -> Clean -> Chunk -> Index)...
+[CrawlAgent] Crawling: https://example.com
+[CrawlAgent] Successfully saved https://example.com. Pushing to raw_html_queue...
+
+---> [SNOOP: raw_html_queue] Passed through queue
+       url: https://example.com
+       raw_html: <!doctype html><html lang="en"><head><title>Example Domain</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{back... (truncated, total length 528)
+       timestamp: 1771687162.7151115
+       headers: ['Date', 'Content-Type', 'Transfer-Encoding', 'Connection', 'Content-Encoding', 'Last-Modified', 'Allow', 'Age', 'cf-cache-status', 'Vary', 'Server', 'CF-RAY'] (dictionary keys)
+---<
+[CleanAgent] Cleaning HTML from: https://example.com
+[CleanAgent] Finished cleaning https://example.com. Pushing to clean_queue...
+
+---> [SNOOP: clean_queue] Passed through queue
+       clean_text: This domain is for use in documentation examples without needing permission. Avoid use in operations.
+Learn more
+       metadata: ['title', 'author', 'publish_date'] (dictionary keys)
+       url: https://example.com
+       hash: 2c449548824ba3e1537e581fa1e79269d4594ce1d8ca66d4678ee3316fa6f0a7
+---<
+[ChunkAgent] Chunking content from: https://example.com
+[ChunkAgent] Created 1 chunks for https://example.com. Pushing to chunk_queue...
+
+---> [SNOOP: chunk_queue] Passed through queue
+       chunk_text: This domain is for use in documentation examples without needing permission. Avoid use in operations.
+Learn more
+       chunk_index: 0
+       chunk_metadata: ['title', 'author', 'publish_date', 'url'] (dictionary keys)
+       url: https://example.com
+---<
+[IndexAgent] Flushing batch of 1 chunks to Vector DB...
+[IndexAgent] Batch upsert complete.
+
+Testing Query Answer Agent: 'What is the domain mentioned?'
+[AnswerAgent] Processing query: 'What is the domain mentioned?'
+[RetrievalAgent] Searching DB for: 'What is the domain mentioned?'
+[RetrievalAgent] Retrieved 1 chunks.
+[AnswerAgent] API Key missing or Groq not installed. Returning Mock Answer.
+
+[Final Answer]
+Based on the retrieved context, this is a mock answer for 'What is the domain mentioned?'.
+
+Context excerpt: This domain is for use in documentation examples without needing permission. Avoid use in operations...
+
+[Source 1]
+
+[Sources]
+- https://example.com
+
+=== Test Complete ===

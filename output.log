@@ -1,0 +1,7 @@
+Starting Web Crawler... Press Ctrl+C to gracefully stop.
+[Worker 0] Fetching: https://cricbuzz.com/robots.txt
+[Worker 1] Fetching: https://google.com/
+[Worker 2] Fetching: https://youtube.com/
+[Worker 0] Fetched https://cricbuzz.com/robots.txt - Status: 403 - Content: No
+[Worker 2] Fetched https://youtube.com/ - Status: 500 - Content: No
+[Worker 1] Fetched https://google.com/ - Status: 500 - Content: No

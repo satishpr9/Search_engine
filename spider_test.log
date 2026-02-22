@@ -1,0 +1,1309 @@
+21:40:14 [chromadb.telemetry.product.posthog] INFO: Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+21:40:14 [CrawlAgent-0] INFO: Started and listening to topic: crawl_targets
+21:40:14 [CleanAgent] INFO: Started and listening to topic: raw_html_queue
+21:40:14 [ChunkAgent] INFO: Started and listening to topic: clean_queue
+21:40:14 [IndexAgent] INFO: Started and listening to topic: chunk_queue
+21:40:14 [FrontierAgent] INFO: Started and listening to topic: extracted_links_queue
+21:40:14 [FrontierAgent] INFO: Added 1 new distinct URLs from https://cricbuzz.com/ to crawl queue.
+21:40:15 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/
+21:40:15 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/. Found 163 links. Pushing to clean_queue and extracted_links_queue...
+21:40:15 [FrontierAgent] INFO: Added 101 new distinct URLs from https://cricbuzz.com/ to crawl queue.
+Initialized ChromaDB collection: web_search
+Subscribed to topic: crawl_targets
+Subscribed to topic: raw_html_queue
+Subscribed to topic: clean_queue
+Subscribed to topic: chunk_queue
+Subscribed to topic: extracted_links_queue
+
+=== Starting Broad Spider ===
+Seeds: ['https://cricbuzz.com/']
+Allowed Domains: ['cricbuzz.com']
+Concurrency: 1
+Press Ctrl+C to stop.
+
+[CrawlAgent] Crawling: https://cricbuzz.com/
+[CrawlAgent] Successfully saved https://cricbuzz.com/. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match/live-scores
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-schedule/upcoming-series/international
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-scorecard-archives
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-schedule/series/all
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-stats/icc-rankings/men/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10724/the-ford-trophy-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/132164/cntbry-vs-cd-final-the-ford-trophy-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147082/bor-vs-saep-3rd-match-csa-provincial-one-day-challenge-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147148/limpo-vs-kng-4th-match-csa-provincial-one-day-challenge-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/133611/ql-vs-saus-19th-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/133622/tas-vs-nsw-20th-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10878/csa-four-day-series-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/134089/war-vs-lions-final-csa-four-day-series-division-one
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11518/pakistan-a-v-england-lions-in-uae-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/145773/paka-vs-enga-2nd-t20-pakistan-a-v-england-lions-in-uae-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-v-australia-women
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11487/west-indies-women-v-sri-lanka-women
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/144618/slw-vs-wiw-1st-odi-west-indies-women-v-sri-lanka-women
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/144620/wiw-vs-slw-2nd-odi-west-indies-women-v-sri-lanka-women
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10146/south-africa-w-v-pakistan-w
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/122181/rsaw-vs-pakw-1st-odi-south-africa-w-v-pakistan-w
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/matches
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/matches
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/points-table
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/matches
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137834/incessant-rain-washes-out-new-zealand-pakistan-clash
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137833/ipl-matches-at-chinnaswamy-not-a-done-deal-yet
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137832/the-unexaggerative-unvarnished-unspiced-quinton-de-kock
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137831/suryakumar-backs-tilak-stresses-clarity-over-concern-at-no-3
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137829/two-unbeaten-giants-collide-in-ahmedabad-blockbuster
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137828/conrad-wants-impact-not-consistency-from-brevis
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137827/shreyanka-shines-as-india-take-lead-in-multi-format-series
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137826/brook-calls-for-braver-england-batting-as-openers-search-for-spark
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6066/india-vs-new-zealand-3rd-odi-indore
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6065/india-vs-new-zealand-1st-odi-baroda
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6064/india-vs-south-africa-2025-2nd-odi-raipur
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6063/india-vs-south-africa-2025-1st-odi-ranchi
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6062/india-win-the-2025-womens-world-cup
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-gallery/6061/india-vs-south-africa-2025-womens-world-cup-final
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-photo-gallery
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164321/pakistan-living-in-the-past-only-care-about-beating-india-mohit-sharma
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164328/preview-vs-t20
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand
+21:40:16 [IndexAgent] INFO: Flushing batch of 1 chunks to Vector DB...
+21:40:16 [IndexAgent] INFO: Batch upsert complete. (1 unique chunks)
+21:40:17 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026
+21:40:17 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026. Found 96 links. Pushing to clean_queue and extracted_links_queue...
+21:40:17 [FrontierAgent] INFO: Added 15 new distinct URLs from https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026 to crawl queue.
+21:40:18 [IndexAgent] INFO: Flushing batch of 1 chunks to Vector DB...
+21:40:18 [IndexAgent] INFO: Batch upsert complete. (1 unique chunks)
+21:40:18 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance
+21:40:18 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance. Found 84 links. Pushing to clean_queue and extracted_links_queue...
+21:40:18 [FrontierAgent] INFO: Added 5 new distinct URLs from https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance to crawl queue.
+21:40:18 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women
+21:40:18 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women. Found 96 links. Pushing to clean_queue and extracted_links_queue...
+21:40:18 [FrontierAgent] INFO: Added 20 new distinct URLs from https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women to crawl queue.
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137807/indian-cricket-deserves-better-than-the-cupcake-catastrophe
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137811/emotional-trott-signs-off-from-a-journey-that-began-by-chance
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137809/zadran-nabi-star-as-afghanistan-bow-out-with-a-big-win
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137818/maharaj-to-lead-south-africa-in-post-world-cup-t20i-series-in-new-zealand
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137810/zimbabwe-learn-to-live-with-the-noise
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137806/bennett-fifty-raza-blitz-power-zimbabwe-in-thrilling-win-over-sri-lanka
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137625/brian-bennett-built-in-the-backyard-ready-for-the-world
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137815/agha-shaheen-usman-among-63-pakistan-players-to-register-for-hundred-2026-auction
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137805/voll-and-gardner-haul-australia-back-to-level-terms
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137768/pratika-rawal-back-in-india-squad-for-australia-odis
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137803/ranji-trophy-final-to-be-held-in-hubli
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137801/karnataka-set-up-ranji-trophy-title-clash-against-jk
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137791/jammu-kashmir-beat-bengal-to-reach-historic-first-ever-ranji-final
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137813/can-towhid-hridoy-get-a-fixed-spot-in-bangladeshs-odi-lineup
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137515/in-a-city-shaped-by-textbooks-abhigyan-kundu-chose-the-bat
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137503/coffee-chaos-and-clarity-24-minutes-with-sarah-taylor
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137420/vaibhav-sooryavanshi-and-the-long-way-to-patna
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/136354/im-ready-how-smriti-mandhana-reinvented-herself
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137083/25-quirky-and-nerdy-cricket-stats-from-2025
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/136875/what-data-and-ai-are-telling-rajasthan-royals
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/136707/from-crying-in-the-nets-to-faking-smiles-inside-jemimah-rodrigues-battle-with-anxiety
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137285/ayush-mhatre-now-boarding-virar-fast
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/135724/at-the-cliffs-edge-brendan-taylors-descent-surrender-and-return
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/135161/shubman-of-the-series
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/135046/crickets-willow-stretched-by-time-and-demand
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/135745/behind-abhishek-sharmas-bat-swing
+[CrawlAgent] Crawling: https://cricbuzz.com/careers
+[CrawlAgent] Crawling: https://cricbuzz.com/info/advertise
+[CrawlAgent] Crawling: https://cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda
+[CrawlAgent] Crawling: https://cricbuzz.com/info/about
+[CrawlAgent] Crawling: https://cricbuzz.com/info/privacy
+[CrawlAgent] Crawling: https://cricbuzz.com/info/terms
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scores/139351/oman-vs-aus-40th-match-group-b-icc-mens-t20-world-cup-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/254/pallekele-international-cricket-stadium
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8642/adam-zampa
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-videos/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164210/australia-prioritising-ashes-cost-them-the-t20-world-cup-murali-kartik
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164208/australia-to-lose-cricket-berth-in-2028-los-angeles-olympics
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164247/2026-t20-world-cup-league-stage-review-ft-best-team-batter-bowler
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164269/cricbuzz-live-australia-vs-oman-post-match-show-t20-world-cup
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-news/137816/mohammad-salahuddin-calls-ex-sports-advisor-liar-for-changing-t20-world-cup-stance. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/author/atif-azam/197
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137674/asif-nazrul-shifts-stance-says-players-and-bcb-decided-world-cup-boycott-cricbuzzcom
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137400/left-helpless-bangladesh-players-watch-a-world-cup-dream-slip-away-icc-t20-world-cup-2026-cricbuzzcom
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/bangladesh/6
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1456758/mohammad-salahuddin
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-series/9611/india-women-v-australia-women. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/stats
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/squads
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/news
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/videos
+21:40:18 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+21:40:19 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026. Found 90 links. Pushing to clean_queue and extracted_links_queue...
+21:40:19 [FrontierAgent] INFO: Added 8 new distinct URLs from https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 to crawl queue.
+21:40:19 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+21:40:19 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026. Found 90 links. Pushing to clean_queue and extracted_links_queue...
+21:40:19 [FrontierAgent] INFO: Added 7 new distinct URLs from https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 to crawl queue.
+21:40:19 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table
+21:40:19 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table. Found 103 links. Pushing to clean_queue and extracted_links_queue...
+21:40:19 [FrontierAgent] INFO: Added 28 new distinct URLs from https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table to crawl queue.
+21:40:19 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/info/privacy
+21:40:19 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/info/privacy. Found 64 links. Pushing to clean_queue and extracted_links_queue...
+21:40:19 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead
+21:40:19 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead. Found 83 links. Pushing to clean_queue and extracted_links_queue...
+21:40:19 [FrontierAgent] INFO: Added 10 new distinct URLs from https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead to crawl queue.
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/photos
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137742/arundhati-reddy-renuka-thakur-fuel-indias-dls-victory
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137486/lucy-hamilton-earns-maiden-test-call-up-for-india-series
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/137448/dropping-down-to-rise-again-bharti-fulmalis-road-to-india-recall
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/117044/india-women-tour-of-australia-2026-3rd-t20i
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/117035/india-women-tour-of-australia-2026-2nd-t20i
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-forecast/117029/india-women-tour-of-australia-2026-1st-t20i
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/13661/arundhati reddy
+[CrawlAgent] Crawling: https://cricbuzz.com/special-content/wicket-zone/9611/india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117047/1st-odi-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117056/2nd-odi-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117065/3rd-odi-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117074/only-test-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117044/3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scores/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/venues/474/terdthai-cricket-ground
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scores/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/stats
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/specials
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/squads
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/news
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/videos
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/photos
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/zimbabwe/12
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/south-africa/11
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/west-indies/10
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/india/2
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/new-zealand/13
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/pakistan/3
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/england/9
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/sri-lanka/5
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/united-states-of-america/15
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/netherlands/24
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/namibia/161
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/australia/4
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/ireland/27
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/oman/304
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/scotland/23
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/italy/527
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/nepal/72
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/afghanistan/96
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/united-arab-emirates/7
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/canada/26
+[CrawlAgent] Successfully saved https://cricbuzz.com/info/privacy. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/info/privacy
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/info/privacy. Pushing to chunk_queue...
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-news/137825/ranaweera-claims-four-as-sri-lanka-take-early-series-lead. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/author/cricbuzz-staff/1
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/sri-lanka-women/258
+21:40:19 [IndexAgent] INFO: Flushing batch of 7 chunks to Vector DB...
+21:40:20 [IndexAgent] INFO: Batch upsert complete. (7 unique chunks)
+21:40:20 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+21:40:20 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26. Found 91 links. Pushing to clean_queue and extracted_links_queue...
+21:40:20 [FrontierAgent] INFO: Added 12 new distinct URLs from https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26 to crawl queue.
+21:40:20 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele
+21:40:20 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele. Found 83 links. Pushing to clean_queue and extracted_links_queue...
+21:40:20 [FrontierAgent] INFO: Added 2 new distinct URLs from https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele to crawl queue.
+21:40:20 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned
+21:40:20 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned. Found 76 links. Pushing to clean_queue and extracted_links_queue...
+21:40:20 [FrontierAgent] INFO: Added 7 new distinct URLs from https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned to crawl queue.
+21:40:20 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-match/live-scores
+21:40:21 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-match/live-scores. Found 108 links. Pushing to clean_queue and extracted_links_queue...
+21:40:21 [FrontierAgent] INFO: Added 20 new distinct URLs from https://cricbuzz.com/cricket-match/live-scores to crawl queue.
+21:40:21 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win
+21:40:21 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win. Found 83 links. Pushing to clean_queue and extracted_links_queue...
+21:40:21 [FrontierAgent] INFO: Added 1 new distinct URLs from https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win to crawl queue.
+21:40:21 [IndexAgent] INFO: Flushing batch of 5 chunks to Vector DB...
+21:40:21 [IndexAgent] INFO: Batch upsert complete. (5 unique chunks)
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-team/west-indies-women/257
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9095/stafanie-taylor
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9152/inoka-ranaweera
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/23956/jannillea-glasgow
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11350/harshitha-samarawickrama
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10008/hasini-perera
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11487/sri-lanka-women-tour-of-west-indies-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/144618/sri-lanka-women-tour-of-west-indies-2026-1st-odi
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scores/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/matches
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/venues/38/waca-ground
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/points-table
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/52502/joel-curtis
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-news/137830/familiar-foes-higher-stakes-in-pallekele. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/author/gokul-gopal/5
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139373/icc-mens-t20-world-cup-2026-42nd-match-super-8-group-2-y1-v-y4
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-videos/164331/cricbuzz-live-nz-vs-pak-t20-world-cup-super-8-match-abandoned. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/category/16/cricbuzz-live
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164083/india-sa-wi-will-be-wary-of-zimbabwe-dark-horses-of-t20-wc-kartik
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164326/not-worried-about-abhishek-worried-about-those-who-will-face-him-surya
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/163804/abhishek-mindset-virrender-sehwag
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/164319/pakistan-strongest-with-babar-as-an-opener-ajinkya-rahane
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/163754/suryakumar-legacy-mohit-sharma
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-videos/163865/india-who-else-could-make-the-semis-of-the-2026-t20-world-cup
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-match/live-scores. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-match/live-scores
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-match/live-scores. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match/live-scores/recent-matches
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match/live-scores/upcoming-matches
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/matches
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-news/137822/bowlers-marsh-orchestrate-consolation-australia-win. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139351/icc-mens-t20-world-cup-2026-40th-match-group-b
+21:40:21 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand
+21:40:21 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand. Found 91 links. Pushing to clean_queue and extracted_links_queue...
+21:40:21 [FrontierAgent] INFO: Added 3 new distinct URLs from https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand to crawl queue.
+21:40:22 [IndexAgent] INFO: Flushing batch of 1 chunks to Vector DB...
+21:40:22 [IndexAgent] INFO: Batch upsert complete. (1 unique chunks)
+21:40:23 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+21:40:23 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026. Found 123 links. Pushing to clean_queue and extracted_links_queue...
+21:40:23 [FrontierAgent] INFO: Added 46 new distinct URLs from https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 to crawl queue.
+21:40:23 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+21:40:23 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026. Found 343 links. Pushing to clean_queue and extracted_links_queue...
+21:40:23 [FrontierAgent] INFO: Added 81 new distinct URLs from https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026 to crawl queue.
+21:40:23 [CleanAgent] INFO: Cleaning HTML from: https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+21:40:23 [CleanAgent] INFO: Finished cleaning https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026. Found 217 links. Pushing to clean_queue and extracted_links_queue...
+21:40:23 [FrontierAgent] INFO: Added 35 new distinct URLs from https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026 to crawl queue.
+[CrawlAgent] Successfully saved https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/cricket-news/137817/jacob-duffys-winning-hand. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-news/author/pratyush-sinha/120
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8554/jacob-duffy
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139362/icc-mens-t20-world-cup-2026-41st-match-super-8-group-2-y2-v-y3
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scorecard/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/15/rpremadasa-stadium
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9443/tim-seifert
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11172/finn-allen
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11177/rachin-ravindra
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10693/glenn-phillips
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9976/mark-chapman
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10713/daryl-mitchell
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10100/mitchell-santner
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8983/james-neesham
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9067/matt-henry
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8561/ish-sodhi
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10692/lockie-ferguson
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10697/cole-mcconchie
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9441/kyle-jamieson
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9838/devon-conway
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/46170/rob-walter
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1396/luke-ronchi
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/59/jacob-oram
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1914/james-foster
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/13625/sahibzada-farhan
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/14241/saim-ayub
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10101/salman-agha
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8359/babar-azam
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10863/fakhar-zaman
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/19013/usman-khan
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11186/shadab-khan
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8367/mohammad-nawaz
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11265/faheem-ashraf
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/19318/salman-mirza
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/55799/usman-tariq
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12160/shaheen-afridi
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12555/abrar-ahmed
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/14247/naseem-shah
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/37579/khawaja-nafay
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/42667/mike-hesson
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/46058/shane-mcdermott
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/206/azhar-mahmood
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1463207/hanif-malik
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scorecard/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues/40/adelaide-oval
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10012/smriti-mandhana
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/10012/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/14825/shafali-verma
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/14825/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/13517/jemimah-rodrigues
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/13517/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/16208/richa-ghosh
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/16208/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9082/harmanpreet-kaur
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/9082/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/22226/amanjot-kaur
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/22226/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11098/deepti-sharma
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/11098/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/35101/shreyanka-patil
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/13661/arundhati-reddy
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/41078/shree-charani
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/14491/renuka-singh-thakur
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/15638/darcie-brown
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/15638/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11989/ashleigh-gardner
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/11989/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9476/kim-garth
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/9476/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12011/sophie-molineux
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/12011/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12211/annabel-sutherland
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/12211/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12015/georgia-wareham
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/1/12015/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10012/smriti
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/18475/georgia-voll
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/18475/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9989/beth-mooney
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/9989/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/15636/phoebe-litchfield
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/15636/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9115/ellyse-perry
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/9115/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/11989/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/12015/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/12211/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11101/grace-harris
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/11101/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/12011/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/9476/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/15638/batting
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/14491/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/35101/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/11098/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/13661/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/41078/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/player-match-highlights/117044/2/22226/bowling
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9115/perry
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12015/wareham
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12211/sutherland
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12011/molineux
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11405/nicola-carey
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11956/tahlia-mcgrath
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/9108/megan-schutt
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/12018/shelley-nitschke
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1463152/gavan-twining
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1463179/daniel-james-marsh
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1463174/scott-prestwidge
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1448841/kranti-gaud
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/40857/vaishnavi-sharma
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/52925/bharti-fulmali
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1448805/gunalan-kamalini
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11326/sneh-rana
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/8757/amol-muzumdar
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1857/aavishkar-salvi
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/52404/munish-bali
+[CrawlAgent] Successfully saved https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026. Pushing to raw_html_queue...
+[ChunkAgent] Chunking content from: https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[ChunkAgent] Created 1 chunks for https://cricbuzz.com/live-cricket-scorecard/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026. Pushing to chunk_queue...
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/venues/135/willowmoore-park
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-facts/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scores/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-scorecard/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-squads/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/points-table
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-over-by-over/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-highlights/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/live-cricket-full-commentary/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/cricket-match-news/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1431603/zakir-kathrada
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/21721/musawenkosi-twala
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/11009/yassar-cook
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/21396/muhammed-mayet
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/23916/benjamin-van-niekerk
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/13325/hermann-rolfes
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10797/aubrey-swanepoel
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20362/gareth-dukes
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20392/jon-hinrichsen
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/33113/tetelo-maphaka
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/1431091/themba-maupa
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/24351/amaan-khan
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/18582/andrew-rasemene
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20623/tumelo-simelane
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/22086/jesse-albanie
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20303/ernest-kemm
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20591/jurie-snyman
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/21396/m-mayet
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10797/swanepoel
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20392/hinrichsen
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/20528/christopher-britz
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/14768/kabelo-sekhukhune
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/53401/dewan-marais
+21:40:24 [IndexAgent] INFO: Flushing batch of 3 chunks to Vector DB...
+21:40:24 [IndexAgent] INFO: Batch upsert complete. (3 unique chunks)
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/10685/grant-thomson
+[CrawlAgent] Crawling: https://cricbuzz.com/profiles/41652/brayden-hicks
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/133622/tas-vs-nsw-20th-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/133622/tas-vs-nsw-20th-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/133611/ql-vs-saus-19th-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/133611/ql-vs-saus-19th-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147148/limpo-vs-kng-4th-match-csa-provincial-one-day-challenge-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147148/limpo-vs-kng-4th-match-csa-provincial-one-day-challenge-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137829/two-unbeaten-giants-collide-in-ahmedabad-blockbuster: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137829/two-unbeaten-giants-collide-in-ahmedabad-blockbuster due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137828/conrad-wants-impact-not-consistency-from-brevis: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137828/conrad-wants-impact-not-consistency-from-brevis due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137831/suryakumar-backs-tilak-stresses-clarity-over-concern-at-no-3: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137831/suryakumar-backs-tilak-stresses-clarity-over-concern-at-no-3 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137833/ipl-matches-at-chinnaswamy-not-a-done-deal-yet: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137833/ipl-matches-at-chinnaswamy-not-a-done-deal-yet due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137832/the-unexaggerative-unvarnished-unspiced-quinton-de-kock: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137832/the-unexaggerative-unvarnished-unspiced-quinton-de-kock due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137834/incessant-rain-washes-out-new-zealand-pakistan-clash: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137834/incessant-rain-washes-out-new-zealand-pakistan-clash due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147082/bor-vs-saep-3rd-match-csa-provincial-one-day-challenge-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147082/bor-vs-saep-3rd-match-csa-provincial-one-day-challenge-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/info/terms: 
+[CrawlAgent] Skipped https://cricbuzz.com/info/terms due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/points-table: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/points-table due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/info/advertise: 
+[CrawlAgent] Skipped https://cricbuzz.com/info/advertise due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/info/about: 
+[CrawlAgent] Skipped https://cricbuzz.com/info/about due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda: 
+[CrawlAgent] Skipped https://cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/careers: 
+[CrawlAgent] Skipped https://cricbuzz.com/careers due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/135745/behind-abhishek-sharmas-bat-swing: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/135745/behind-abhishek-sharmas-bat-swing due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/135046/crickets-willow-stretched-by-time-and-demand: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/135046/crickets-willow-stretched-by-time-and-demand due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/135161/shubman-of-the-series: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/135161/shubman-of-the-series due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/135724/at-the-cliffs-edge-brendan-taylors-descent-surrender-and-return: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/135724/at-the-cliffs-edge-brendan-taylors-descent-surrender-and-return due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137826/brook-calls-for-braver-england-batting-as-openers-search-for-spark: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137826/brook-calls-for-braver-england-batting-as-openers-search-for-spark due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-stats/icc-rankings/men/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-stats/icc-rankings/men/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6066/india-vs-new-zealand-3rd-odi-indore: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6066/india-vs-new-zealand-3rd-odi-indore due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137285/ayush-mhatre-now-boarding-virar-fast: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137285/ayush-mhatre-now-boarding-virar-fast due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/132164/cntbry-vs-cd-final-the-ford-trophy-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/132164/cntbry-vs-cd-final-the-ford-trophy-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-schedule/series/all: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-schedule/series/all due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-scorecard-archives: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-scorecard-archives due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/136707/from-crying-in-the-nets-to-faking-smiles-inside-jemimah-rodrigues-battle-with-anxiety: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/136707/from-crying-in-the-nets-to-faking-smiles-inside-jemimah-rodrigues-battle-with-anxiety due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/136354/im-ready-how-smriti-mandhana-reinvented-herself: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/136354/im-ready-how-smriti-mandhana-reinvented-herself due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137083/25-quirky-and-nerdy-cricket-stats-from-2025: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137083/25-quirky-and-nerdy-cricket-stats-from-2025 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137420/vaibhav-sooryavanshi-and-the-long-way-to-patna: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137420/vaibhav-sooryavanshi-and-the-long-way-to-patna due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137503/coffee-chaos-and-clarity-24-minutes-with-sarah-taylor: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137503/coffee-chaos-and-clarity-24-minutes-with-sarah-taylor due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137515/in-a-city-shaped-by-textbooks-abhigyan-kundu-chose-the-bat: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137515/in-a-city-shaped-by-textbooks-abhigyan-kundu-chose-the-bat due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/122181/rsaw-vs-pakw-1st-odi-south-africa-w-v-pakistan-w: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/122181/rsaw-vs-pakw-1st-odi-south-africa-w-v-pakistan-w due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137813/can-towhid-hridoy-get-a-fixed-spot-in-bangladeshs-odi-lineup: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137813/can-towhid-hridoy-get-a-fixed-spot-in-bangladeshs-odi-lineup due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/136875/what-data-and-ai-are-telling-rajasthan-royals: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/136875/what-data-and-ai-are-telling-rajasthan-royals due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10146/south-africa-w-v-pakistan-w: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10146/south-africa-w-v-pakistan-w due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10724/the-ford-trophy-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10724/the-ford-trophy-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137791/jammu-kashmir-beat-bengal-to-reach-historic-first-ever-ranji-final: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137791/jammu-kashmir-beat-bengal-to-reach-historic-first-ever-ranji-final due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137801/karnataka-set-up-ranji-trophy-title-clash-against-jk: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137801/karnataka-set-up-ranji-trophy-title-clash-against-jk due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/144620/wiw-vs-slw-2nd-odi-west-indies-women-v-sri-lanka-women: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/144620/wiw-vs-slw-2nd-odi-west-indies-women-v-sri-lanka-women due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137768/pratika-rawal-back-in-india-squad-for-australia-odis: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137768/pratika-rawal-back-in-india-squad-for-australia-odis due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/144618/slw-vs-wiw-1st-odi-west-indies-women-v-sri-lanka-women: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/144618/slw-vs-wiw-1st-odi-west-indies-women-v-sri-lanka-women due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137805/voll-and-gardner-haul-australia-back-to-level-terms: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137805/voll-and-gardner-haul-australia-back-to-level-terms due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137815/agha-shaheen-usman-among-63-pakistan-players-to-register-for-hundred-2026-auction: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137815/agha-shaheen-usman-among-63-pakistan-players-to-register-for-hundred-2026-auction due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11487/west-indies-women-v-sri-lanka-women: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11487/west-indies-women-v-sri-lanka-women due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137625/brian-bennett-built-in-the-backyard-ready-for-the-world: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137625/brian-bennett-built-in-the-backyard-ready-for-the-world due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137827/shreyanka-shines-as-india-take-lead-in-multi-format-series: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137827/shreyanka-shines-as-india-take-lead-in-multi-format-series due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137810/zimbabwe-learn-to-live-with-the-noise: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137810/zimbabwe-learn-to-live-with-the-noise due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-schedule/upcoming-series/international: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-schedule/upcoming-series/international due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137818/maharaj-to-lead-south-africa-in-post-world-cup-t20i-series-in-new-zealand: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137818/maharaj-to-lead-south-africa-in-post-world-cup-t20i-series-in-new-zealand due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137809/zadran-nabi-star-as-afghanistan-bow-out-with-a-big-win: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137809/zadran-nabi-star-as-afghanistan-bow-out-with-a-big-win due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137811/emotional-trott-signs-off-from-a-journey-that-began-by-chance: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137811/emotional-trott-signs-off-from-a-journey-that-began-by-chance due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-v-australia-women: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-v-australia-women due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139381/ind-vs-rsa-43rd-match-super-8-group-1-x1-v-x4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137807/indian-cricket-deserves-better-than-the-cupcake-catastrophe: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137807/indian-cricket-deserves-better-than-the-cupcake-catastrophe due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164328/preview-vs-t20: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164328/preview-vs-t20 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137806/bennett-fifty-raza-blitz-power-zimbabwe-in-thrilling-win-over-sri-lanka: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137806/bennett-fifty-raza-blitz-power-zimbabwe-in-thrilling-win-over-sri-lanka due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164321/pakistan-living-in-the-past-only-care-about-beating-india-mohit-sharma: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164321/pakistan-living-in-the-past-only-care-about-beating-india-mohit-sharma due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/145773/paka-vs-enga-2nd-t20-pakistan-a-v-england-lions-in-uae-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/145773/paka-vs-enga-2nd-t20-pakistan-a-v-england-lions-in-uae-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11518/pakistan-a-v-england-lions-in-uae-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11518/pakistan-a-v-england-lions-in-uae-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-photo-gallery: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-photo-gallery due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137803/ranji-trophy-final-to-be-held-in-hubli: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137803/ranji-trophy-final-to-be-held-in-hubli due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6061/india-vs-south-africa-2025-womens-world-cup-final: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6061/india-vs-south-africa-2025-womens-world-cup-final due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6062/india-win-the-2025-womens-world-cup: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6062/india-win-the-2025-womens-world-cup due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/134089/war-vs-lions-final-csa-four-day-series-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/134089/war-vs-lions-final-csa-four-day-series-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6063/india-vs-south-africa-2025-1st-odi-ranchi: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6063/india-vs-south-africa-2025-1st-odi-ranchi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6064/india-vs-south-africa-2025-2nd-odi-raipur: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6064/india-vs-south-africa-2025-2nd-odi-raipur due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10878/csa-four-day-series-division-one: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10878/csa-four-day-series-division-one due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-gallery/6065/india-vs-new-zealand-1st-odi-baroda: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-gallery/6065/india-vs-new-zealand-1st-odi-baroda due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164269/cricbuzz-live-australia-vs-oman-post-match-show-t20-world-cup: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164269/cricbuzz-live-australia-vs-oman-post-match-show-t20-world-cup due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164208/australia-to-lose-cricket-berth-in-2028-los-angeles-olympics: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164208/australia-to-lose-cricket-berth-in-2028-los-angeles-olympics due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164247/2026-t20-world-cup-league-stage-review-ft-best-team-batter-bowler: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164247/2026-t20-world-cup-league-stage-review-ft-best-team-batter-bowler due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-videos/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-videos/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164210/australia-prioritising-ashes-cost-them-the-t20-world-cup-murali-kartik: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164210/australia-prioritising-ashes-cost-them-the-t20-world-cup-murali-kartik due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/139351/aus-vs-oman-40th-match-group-b-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8642/adam-zampa: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8642/adam-zampa due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/254/pallekele-international-cricket-stadium: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/254/pallekele-international-cricket-stadium due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/author/atif-azam/197: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/author/atif-azam/197 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117056/2nd-odi-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117056/2nd-odi-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/bangladesh/6: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/bangladesh/6 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/venues/474/terdthai-cricket-ground: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11452/acc-womens-asia-cup-rising-stars-2026/venues/474/terdthai-cricket-ground due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117065/3rd-odi-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117065/3rd-odi-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137486/lucy-hamilton-earns-maiden-test-call-up-for-india-series: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137486/lucy-hamilton-earns-maiden-test-call-up-for-india-series due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/ due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/117035/india-women-tour-of-australia-2026-2nd-t20i: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/117035/india-women-tour-of-australia-2026-2nd-t20i due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117074/only-test-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117074/only-test-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137742/arundhati-reddy-renuka-thakur-fuel-indias-dls-victory: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137742/arundhati-reddy-renuka-thakur-fuel-indias-dls-victory due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/special-content/wicket-zone/9611/india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/special-content/wicket-zone/9611/india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/news: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/news due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117044/3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117044/3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/117029/india-women-tour-of-australia-2026-1st-t20i: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/117029/india-women-tour-of-australia-2026-1st-t20i due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117047/1st-odi-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117047/1st-odi-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137448/dropping-down-to-rise-again-bharti-fulmalis-road-to-india-recall: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137448/dropping-down-to-rise-again-bharti-fulmalis-road-to-india-recall due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/13661/arundhati reddy: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/13661/arundhati reddy due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-forecast/117044/india-women-tour-of-australia-2026-3rd-t20i: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-forecast/117044/india-women-tour-of-australia-2026-3rd-t20i due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/photos: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/photos due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/videos: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/videos due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/stats: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/stats due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/squads: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/squads due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1456758/mohammad-salahuddin: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1456758/mohammad-salahuddin due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137674/asif-nazrul-shifts-stance-says-players-and-bcb-decided-world-cup-boycott-cricbuzzcom: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137674/asif-nazrul-shifts-stance-says-players-and-bcb-decided-world-cup-boycott-cricbuzzcom due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/137400/left-helpless-bangladesh-players-watch-a-world-cup-dream-slip-away-icc-t20-world-cup-2026-cricbuzzcom: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/137400/left-helpless-bangladesh-players-watch-a-world-cup-dream-slip-away-icc-t20-world-cup-2026-cricbuzzcom due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/144384/indwa-vs-banwa-final-acc-womens-asia-cup-rising-stars-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/zimbabwe/12: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/zimbabwe/12 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/squads: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/squads due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/sri-lanka/5: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/sri-lanka/5 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/ due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/west-indies/10: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/west-indies/10 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/specials: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/specials due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10008/hasini-perera: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10008/hasini-perera due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/139373/eng-vs-sl-42nd-match-super-8-group-2-y1-v-y4-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/photos: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/photos due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/144618/sri-lanka-women-tour-of-west-indies-2026-1st-odi: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/144618/sri-lanka-women-tour-of-west-indies-2026-1st-odi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11350/harshitha-samarawickrama: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11350/harshitha-samarawickrama due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/videos: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/videos due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/23956/jannillea-glasgow: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/23956/jannillea-glasgow due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9152/inoka-ranaweera: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9152/inoka-ranaweera due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/west-indies-women/257: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/west-indies-women/257 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11487/sri-lanka-women-tour-of-west-indies-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11487/sri-lanka-women-tour-of-west-indies-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/news: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/news due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/author/cricbuzz-staff/1: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/author/cricbuzz-staff/1 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/nepal/72: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/nepal/72 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/canada/26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/canada/26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/ireland/27: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/ireland/27 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9095/stafanie-taylor: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9095/stafanie-taylor due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/namibia/161: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/namibia/161 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/netherlands/24: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/netherlands/24 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/united-states-of-america/15: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/united-states-of-america/15 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/sri-lanka-women/258: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/sri-lanka-women/258 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/pakistan/3: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/pakistan/3 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/south-africa/11: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/south-africa/11 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/afghanistan/96: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/afghanistan/96 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/england/9: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/england/9 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/stats: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/stats due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/scotland/23: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/scotland/23 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/oman/304: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/oman/304 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/australia/4: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/australia/4 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/united-arab-emirates/7: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/united-arab-emirates/7 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/new-zealand/13: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/new-zealand/13 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/italy/527: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/italy/527 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-team/india/2: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-team/india/2 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/117044/indw-vs-ausw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139373/icc-mens-t20-world-cup-2026-42nd-match-super-8-group-2-y1-v-y4: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139373/icc-mens-t20-world-cup-2026-42nd-match-super-8-group-2-y1-v-y4 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/133633/vic-vs-wa-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match/live-scores/upcoming-matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match/live-scores/upcoming-matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match/live-scores/recent-matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match/live-scores/recent-matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164319/pakistan-strongest-with-babar-as-an-opener-ajinkya-rahane: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164319/pakistan-strongest-with-babar-as-an-opener-ajinkya-rahane due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/163754/suryakumar-legacy-mohit-sharma: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/163754/suryakumar-legacy-mohit-sharma due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/163804/abhishek-mindset-virrender-sehwag: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/163804/abhishek-mindset-virrender-sehwag due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164083/india-sa-wi-will-be-wary-of-zimbabwe-dark-horses-of-t20-wc-kartik: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164083/india-sa-wi-will-be-wary-of-zimbabwe-dark-horses-of-t20-wc-kartik due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147060/mpr-vs-estorm-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/category/16/cricbuzz-live: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/category/16/cricbuzz-live due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147049/ncape-vs-swd-1st-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/139362/pak-vs-nz-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/author/gokul-gopal/5: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/author/gokul-gopal/5 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/163865/india-who-else-could-make-the-semis-of-the-2026-t20-world-cup: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/163865/india-who-else-could-make-the-semis-of-the-2026-t20-world-cup due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-videos/164326/not-worried-about-abhishek-worried-about-those-who-will-face-him-surya: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-videos/164326/not-worried-about-abhishek-worried-about-those-who-will-face-him-surya due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/points-table: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/points-table due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/133633/wa-vs-vic-21st-match-australia-domestic-one-day-cup-2025-26 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/venues/38/waca-ground: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/venues/38/waca-ground due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/52502/joel-curtis: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/52502/joel-curtis due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/matches: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/10829/australia-domestic-one-day-cup-2025-26/matches due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-news/author/pratyush-sinha/120: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-news/author/pratyush-sinha/120 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139351/icc-mens-t20-world-cup-2026-40th-match-group-b: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139351/icc-mens-t20-world-cup-2026-40th-match-group-b due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139362/icc-mens-t20-world-cup-2026-41st-match-super-8-group-2-y2-v-y3: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139362/icc-mens-t20-world-cup-2026-41st-match-super-8-group-2-y2-v-y3 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8554/jacob-duffy: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8554/jacob-duffy due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10692/lockie-ferguson: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10692/lockie-ferguson due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8561/ish-sodhi: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8561/ish-sodhi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8983/james-neesham: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8983/james-neesham due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10100/mitchell-santner: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10100/mitchell-santner due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10713/daryl-mitchell: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10713/daryl-mitchell due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10693/glenn-phillips: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10693/glenn-phillips due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11172/finn-allen: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11172/finn-allen due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9443/tim-seifert: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9443/tim-seifert due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/15/rpremadasa-stadium: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/venues/15/rpremadasa-stadium due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9067/matt-henry: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9067/matt-henry due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10685/grant-thomson: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10685/grant-thomson due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/53401/dewan-marais: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/53401/dewan-marais due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20392/hinrichsen: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20392/hinrichsen due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10797/swanepoel: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10797/swanepoel due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20303/ernest-kemm: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20303/ernest-kemm due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/24351/amaan-khan: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/24351/amaan-khan due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1431091/themba-maupa: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1431091/themba-maupa due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20362/gareth-dukes: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20362/gareth-dukes due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10797/aubrey-swanepoel: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10797/aubrey-swanepoel due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/21396/muhammed-mayet: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/21396/muhammed-mayet due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11009/yassar-cook: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11009/yassar-cook due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/venues/135/willowmoore-park: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/venues/135/willowmoore-park due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/14768/kabelo-sekhukhune: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/14768/kabelo-sekhukhune due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/21396/m-mayet: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/21396/m-mayet due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/52404/munish-bali: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/52404/munish-bali due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8757/amol-muzumdar: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8757/amol-muzumdar due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/22086/jesse-albanie: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/22086/jesse-albanie due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11326/sneh-rana: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11326/sneh-rana due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/52925/bharti-fulmali: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/52925/bharti-fulmali due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/33113/tetelo-maphaka: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/33113/tetelo-maphaka due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1463174/scott-prestwidge: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1463174/scott-prestwidge due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1463152/gavan-twining: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1463152/gavan-twining due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/13325/hermann-rolfes: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/13325/hermann-rolfes due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9108/megan-schutt: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9108/megan-schutt due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11405/nicola-carey: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11405/nicola-carey due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/21721/musawenkosi-twala: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/21721/musawenkosi-twala due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12011/molineux: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12011/molineux due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9115/perry: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9115/perry due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/22226/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/22226/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/11098/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/11098/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/points-table: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/11559/csa-provincial-one-day-challenge-division-two-2026/points-table due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/14491/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/14491/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/9476/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/9476/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/11101/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/11101/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/12211/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/12211/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/11989/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/11989/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9115/ellyse-perry: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9115/ellyse-perry due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/15636/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/15636/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9989/beth-mooney: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9989/beth-mooney due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/18475/georgia-voll: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/18475/georgia-voll due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/12015/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/12015/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/12211/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/12211/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12211/annabel-sutherland: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12211/annabel-sutherland due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12011/sophie-molineux: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12011/sophie-molineux due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/11989/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/11989/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11989/ashleigh-gardner: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11989/ashleigh-gardner due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/14491/renuka-singh-thakur: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/14491/renuka-singh-thakur due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/13661/arundhati-reddy: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/13661/arundhati-reddy due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/11098/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/11098/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11098/deepti-sharma: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11098/deepti-sharma due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/9082/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/9082/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1448805/gunalan-kamalini: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1448805/gunalan-kamalini due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/16208/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/16208/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/13517/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/13517/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/13517/jemimah-rodrigues: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/13517/jemimah-rodrigues due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/10012/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/10012/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10012/smriti-mandhana: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10012/smriti-mandhana due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12211/sutherland: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12211/sutherland due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20623/tumelo-simelane: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20623/tumelo-simelane due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/41078/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/41078/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues/40/adelaide-oval: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-series/9611/india-women-tour-of-australia-2026/venues/40/adelaide-oval due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/15636/phoebe-litchfield: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/15636/phoebe-litchfield due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-highlights/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-highlights/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/42667/mike-hesson: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/42667/mike-hesson due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/12011/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/12011/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/37579/khawaja-nafay: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/37579/khawaja-nafay due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12160/shaheen-afridi: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12160/shaheen-afridi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/9476/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/9476/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/19318/salman-mirza: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/19318/salman-mirza due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/41652/brayden-hicks: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/41652/brayden-hicks due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11265/faheem-ashraf: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11265/faheem-ashraf due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/15638/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/15638/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20528/christopher-britz: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20528/christopher-britz due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11186/shadab-khan: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11186/shadab-khan due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20591/jurie-snyman: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20591/jurie-snyman due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/22226/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/22226/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/18582/andrew-rasemene: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/18582/andrew-rasemene due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/20392/jon-hinrichsen: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/20392/jon-hinrichsen due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10101/salman-agha: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10101/salman-agha due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/23916/benjamin-van-niekerk: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/23916/benjamin-van-niekerk due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1431603/zakir-kathrada: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1431603/zakir-kathrada due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/13625/sahibzada-farhan: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/13625/sahibzada-farhan due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/1/14825/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/1/14825/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scores/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scores/147060/estorm-vs-mpr-2nd-match-csa-provincial-one-day-challenge-division-two-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/59/jacob-oram: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/59/jacob-oram due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1857/aavishkar-salvi: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1857/aavishkar-salvi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-news/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-news/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1448841/kranti-gaud: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1448841/kranti-gaud due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1463179/daniel-james-marsh: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1463179/daniel-james-marsh due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9441/kyle-jamieson: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9441/kyle-jamieson due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12018/shelley-nitschke: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12018/shelley-nitschke due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11956/tahlia-mcgrath: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11956/tahlia-mcgrath due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-squads/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-squads/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12015/wareham: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12015/wareham due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/13661/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/13661/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/35101/bowling: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/35101/bowling due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/15638/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/15638/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1463207/hanif-malik: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1463207/hanif-malik due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/12011/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/12011/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11101/grace-harris: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11101/grace-harris due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9976/mark-chapman: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9976/mark-chapman due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/12015/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/12015/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/9115/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/9115/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/11177/rachin-ravindra: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/11177/rachin-ravindra due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/9989/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/9989/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/player-match-highlights/117044/2/18475/batting: 
+[CrawlAgent] Skipped https://cricbuzz.com/player-match-highlights/117044/2/18475/batting due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/14247/naseem-shah: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/14247/naseem-shah due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10012/smriti: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10012/smriti due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12015/georgia-wareham: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12015/georgia-wareham due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-over-by-over/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-over-by-over/139362/nz-vs-pak-41st-match-super-8-group-2-y2-v-y3-icc-mens-t20-world-cup-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/40857/vaishnavi-sharma: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/40857/vaishnavi-sharma due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9476/kim-garth: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9476/kim-garth due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/15638/darcie-brown: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/15638/darcie-brown due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/55799/usman-tariq: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/55799/usman-tariq due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/41078/shree-charani: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/41078/shree-charani due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/35101/shreyanka-patil: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/35101/shreyanka-patil due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/22226/amanjot-kaur: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/22226/amanjot-kaur due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9082/harmanpreet-kaur: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9082/harmanpreet-kaur due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/16208/richa-ghosh: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/16208/richa-ghosh due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/206/azhar-mahmood: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/206/azhar-mahmood due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/14825/shafali-verma: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/14825/shafali-verma due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-full-commentary/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-full-commentary/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/live-cricket-scorecard/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/live-cricket-scorecard/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/cricket-match-facts/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026: 
+[CrawlAgent] Skipped https://cricbuzz.com/cricket-match-facts/117044/ausw-vs-indw-3rd-t20i-india-women-tour-of-australia-2026 due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/46058/shane-mcdermott: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/46058/shane-mcdermott due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/12555/abrar-ahmed: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/12555/abrar-ahmed due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8367/mohammad-nawaz: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8367/mohammad-nawaz due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/19013/usman-khan: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/19013/usman-khan due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10863/fakhar-zaman: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10863/fakhar-zaman due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/8359/babar-azam: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/8359/babar-azam due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/14241/saim-ayub: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/14241/saim-ayub due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1914/james-foster: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1914/james-foster due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/1396/luke-ronchi: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/1396/luke-ronchi due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/46170/rob-walter: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/46170/rob-walter due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/9838/devon-conway: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/9838/devon-conway due to bad status: Failed
+[CrawlAgent] Error crawling https://cricbuzz.com/profiles/10697/cole-mcconchie: 
+[CrawlAgent] Skipped https://cricbuzz.com/profiles/10697/cole-mcconchie due to bad status: Failed

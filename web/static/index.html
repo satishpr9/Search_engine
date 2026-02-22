@@ -4,39 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Search</title>
-    <!-- Modern Typography -->
+    <title>Icro Search</title>
+    <!-- Modern Typography: Outfit for headings/logo, Inter for UI text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
         rel="stylesheet">
-    <!-- Phosphor Icons (Lighter and more modern than FA) -->
+    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Dynamic Ambient Background -->
-    <div class="ambient-bg">
-        <div class="glow-blob tr"></div>
-        <div class="glow-blob bl"></div>
-    </div>
+
 
     <!-- Layout Container -->
     <div class="app-layout" id="app">
 
         <!-- Header: Centered on load, moves up on search -->
         <header class="masthead">
-            <div class="logo" id="home-btn">
-                <i class="ph ph-planet logo-icon"></i>
-                <span class="logo-text">Nexus</span>
+            <div class="logo" id="home-btn" aria-label="Icro Home">
+                <span class="logo-text">Icro</span>
             </div>
 
             <div class="search-wrapper">
                 <form id="search-form" class="search-form">
-                    <i class="ph ph-magnifying-glass search-icon"></i>
-                    <input type="text" id="search-input" placeholder="Search the web, beautifully..." autocomplete="off"
-                        spellcheck="false" autofocus>
+                    <i class="ph ph-magnifying-glass search-icon" style="color: #9aa0a6;"></i>
+                    <input type="text" id="search-input" placeholder="" autocomplete="off" spellcheck="false" autofocus>
 
                     <button type="button" id="clear-btn" class="icon-btn" style="display:none;"
                         aria-label="Clear Search">
@@ -48,6 +46,14 @@
                         <i class="ph ph-arrow-right"></i>
                     </button>
                 </form>
+
+                <!-- Custom Search Tabs -->
+                <div class="search-tabs" id="search-tabs" style="display: none;">
+                    <a href="#" class="search-tab active" data-type="all"><i class="ph ph-magnifying-glass"></i> All</a>
+                    <a href="#" class="search-tab" data-type="images"><i class="ph ph-image"></i> Images</a>
+                    <a href="#" class="search-tab" data-type="videos"><i class="ph ph-video-camera"></i> Videos</a>
+                    <a href="#" class="search-tab" data-type="news"><i class="ph ph-newspaper"></i> News</a>
+                </div>
 
                 <!-- Autocomplete Dropdown -->
                 <div id="autocomplete-box" class="autocomplete-box"></div>
@@ -78,8 +84,45 @@
                 </div>
             </div>
 
-            <!-- Results List -->
-            <div id="results-list" class="results-layout"></div>
+            <!-- Instant Widget (Calculator, Weather, etc) -->
+            <div id="instant-widget" class="instant-widget-card" style="display: none;"></div>
+
+            <!-- AI Overview -->
+            <div id="ai-overview" class="ai-overview-card" style="display: none;">
+                <div class="ai-header">
+                    <i class="ph-fill ph-sparkle"></i>
+                    <h3>AI Overview</h3>
+                </div>
+                <div class="ai-content-wrapper">
+                    <div id="ai-summary-text" class="ai-content"></div>
+                </div>
+                <button id="ai-show-more" class="show-more-btn" style="display: none;">
+                    <i class="ph ph-caret-down"></i> Show more
+                </button>
+                <div id="ai-chat-thread" class="ai-chat-thread"></div>
+                <form id="ai-chat-form" class="ai-chat-form" style="display: none;">
+                    <input type="text" id="ai-chat-input" placeholder="Ask a follow-up question..." autocomplete="off">
+                    <button type="submit" class="icon-btn" aria-label="Send">
+                        <i class="ph ph-paper-plane-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Main Grid Layout -->
+            <div class="main-grid">
+                <!-- Results List Column -->
+                <div>
+                    <!-- Image Carousel -->
+                    <div id="image-carousel" class="image-carousel" style="display: none;"></div>
+
+                    <div id="results-list" class="results-layout"></div>
+                </div>
+
+                <!-- Knowledge Panel Column -->
+                <div id="knowledge-panel" class="knowledge-panel" style="display: none;">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
 
             <!-- Pagination Controls -->
             <div id="pagination" class="pagination-controls">
@@ -93,13 +136,13 @@
         </main>
     </div>
 
-    <!-- Floating Action Button for Crawling -->
+    <!--     
     <button id="fab-crawl" class="fab-btn" aria-label="Add URL to Crawl">
         <i class="ph ph-plus"></i>
-    </button>
+    </button> -->
 
     <!-- Crawl Modal -->
-    <div id="crawl-modal" class="modal-overlay">
+    <!-- <div id="crawl-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" id="close-modal"><i class="ph ph-x"></i></button>
             <div class="modal-header">
@@ -115,8 +158,26 @@
             </form>
             <div id="crawl-status" class="crawl-status"></div>
         </div>
+    </div> -->
+
+    <!-- Media Modal (Lightbox) -->
+    <div id="media-modal" class="media-modal">
+        <div class="media-modal-backdrop" id="media-modal-backdrop"></div>
+        <div class="media-modal-content">
+            <button id="media-modal-close" class="icon-btn media-modal-close"><i class="ph ph-x"></i></button>
+            <div id="media-modal-body" class="media-modal-body"></div>
+            <div id="media-modal-meta" class="media-modal-meta" style="display: none;">
+                <div>
+                    <div class="modal-title" id="media-modal-title"></div>
+                    <div class="modal-source" id="media-modal-source"></div>
+                </div>
+                <a id="media-modal-link" href="#" target="_blank" class="modal-link">Visit Site <i
+                        class="ph ph-arrow-up-right"></i></a>
+            </div>
+        </div>
     </div>
 
+    <!-- Modals and Overlay -->
     <script src="script.js"></script>
 </body>
 

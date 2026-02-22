@@ -42,7 +42,7 @@ def hamming_distance(hash1, hash2):
 def parse_html(html, base_url):
     """
     Parses HTML content, removes boilerplate, and extracts semantic metadata.
-    Returns: title, cleaned_text, canonical_url, list_of_links
+    Returns: title, cleaned_text, canonical_url, list_of_links, thumbnail_url, page_type
     """
     try:
         soup = BeautifulSoup(html, 'lxml')
@@ -59,6 +59,25 @@ def parse_html(html, base_url):
         if canonical_tag and canonical_tag.has_attr('href'):
             # Sometimes canonicals are relative
             canonical_url = urljoin(base_url, canonical_tag['href'].strip())
+            
+        # Extract thumbnail and page type from OpenGraph
+        og_image = soup.find('meta', property='og:image')
+        thumbnail_url = og_image['content'] if og_image and og_image.has_attr('content') else ""
+        
+        # Fallback to first large image
+        if not thumbnail_url:
+            img = soup.find('img', src=True)
+            if img:
+                thumbnail_url = urljoin(base_url, img['src'])
+                
+        og_type_tag = soup.find('meta', property='og:type')
+        page_type = og_type_tag['content'] if og_type_tag and og_type_tag.has_attr('content') else "website"
+        
+        # Hardcode youtube/video heuristics
+        if 'youtube.com/watch' in base_url or 'vimeo.com' in base_url or 'video' in page_type.lower():
+            page_type = "video"
+        elif 'article' in page_type.lower() or 'news' in page_type.lower():
+            page_type = "article"
         
         # Extract main text
         text = soup.get_text(separator=' ', strip=True)
@@ -84,7 +103,7 @@ def parse_html(html, base_url):
                     clean_url += f"?{parsed.query}"
                 links.add(clean_url)
                 
-        return title, text, canonical_url, list(links)
+        return title, text, canonical_url, list(links), thumbnail_url, page_type
     except Exception as e:
         print(f"Parser error for {base_url}: {e}")
-        return "", "", base_url, []
+        return "", "", base_url, [], "", "website"
